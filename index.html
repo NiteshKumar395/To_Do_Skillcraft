@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Desk — Task Organizer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app">
+  <div class="sidebar">
+    <div class="brand">Desk<span>Task Organizer</span></div>
+    <ul class="lists" id="lists"></ul>
+    <div class="add-list">
+      <input type="text" id="newListInput" placeholder="New list…" maxlength="30" />
+      <button id="addListBtn" title="Add list">+</button>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="page-head">
+      <div class="page-title"><span class="dot" id="pageDot"></span><span id="pageTitle">To do</span></div>
+    </div>
+    <div class="page-sub" id="pageSub">0 tasks</div>
+
+    <div class="task-form">
+      <input type="text" id="taskInput" placeholder="Add a task…" maxlength="140" />
+      <input type="date" id="taskDate" />
+      <input type="time" id="taskTime" />
+      <button class="btn-add" id="addTaskBtn">Add</button>
+    </div>
+
+    <ul class="tasks" id="tasks"></ul>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
